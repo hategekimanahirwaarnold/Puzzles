@@ -5,7 +5,7 @@ Math and Computer science problems.
 
 Some of these problems remains unsolved up to this time.
 
-## 1 Nqueens challenge
+## 1. Nqueens challenge
 
 This problems asks the number of ways to arrange N queens in N * N chessboard
 so that none of them attack each other.
