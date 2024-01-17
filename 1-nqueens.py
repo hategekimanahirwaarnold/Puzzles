@@ -85,20 +85,17 @@ def back_track(previous_failed=False, cursor=0, N=4):
 
 
 if __name__ == "__main__":
-    arguments = sys.argv[1:]
-    argc = len(arguments)
-
-    if argc != 1:
+    if len(sys.argv) != 2:
         print("Usage: nqueens N")
         sys.exit(1)
-    N = int(arguments[0])
-    print("N: ", N)
-    if type(N) is not int:
+    if sys.argv[1].isdigit() is False:
         print("N must be a number")
         sys.exit(1)
-    elif N < 4:
-        print("N must be atleast 4")
+    if int(sys.argv[1]) < 4:
+        print("N must be at least 4")
         sys.exit(1)
+
+    N = int(sys.argv[1])
     back_track(previous_failed=False, cursor=0, N=N)
     print("Number of ways: ", len(solutions))
     for solution in solutions:
