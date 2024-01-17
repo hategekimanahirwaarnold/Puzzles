@@ -61,7 +61,7 @@ def find_options(q, allQ, N):
 
 def back_track(previous_failed=False, cursor=0, N=4):
     """A function for computing back tracking algorithm
-        to solve the problems"""
+        to solve the problem"""
     if previous_failed:
         allQ.pop()
         if len(allQ) == 0:
