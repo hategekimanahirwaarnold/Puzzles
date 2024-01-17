@@ -8,7 +8,7 @@ sys.setrecursionlimit(1000000)
 
 
 class Queen():
-    """A class of queens challenge"""
+    """A class for each queen that will be created"""
     queen_id = 0
 
     def __init__(self, x, y):
